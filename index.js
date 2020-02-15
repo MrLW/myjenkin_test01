@@ -3,12 +3,12 @@
  * @Author: leekwe
  * @Date: 2020-02-14 12:00:52
  * @version: 1.0
- * @LastEditors  : leekwe
+ * @LastEditors: leekwe
  * @LastEditTime : 2020-02-14 12:02:46
  */
 const http = require('http');
 const app = http.createServer((req,res)=>{
-    res.end("Hello, Jenkins, from v1.0.0");
+    res.end("Hello, Jenkins, build from Docker.(v1.0.0)");
 });
 console.info('app is running on 3000');
 app.listen(3000);
