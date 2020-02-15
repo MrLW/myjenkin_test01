@@ -1,5 +1,5 @@
 FROM node:10.14.2
-COPY ./ /app
+ADD ./ /app
 WORKDIR /app
 RUN npm start &
 EXPOSE 3000
