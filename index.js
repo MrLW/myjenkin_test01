@@ -8,7 +8,7 @@
  */
 const http = require('http');
 const app = http.createServer((req,res)=>{
-    res.end("Hello, Jenkins, build from Docker.(v1.0.0)");
+    res.end("Hello, Jenkins, build from Docker.(v2.0.0)");
 });
 console.info('app is running on 3000');
 app.listen(3000);
