@@ -5,10 +5,11 @@ pipeline {
             args '-p 3000:3000'
         }
     }
-    stages {
-        
+    stages {       
         stage('prepare'){
-            def props = readJSON file: './package.json'
+            steps {
+                def props = readJSON file: './package.json'
+            }
         }
 
         stage('Build') {
